@@ -1,0 +1,18 @@
+/* Id*/
+#firstpara{
+    background-color: tomato;
+}
+#firstdiv{
+    background-color: aqua;
+}
+
+/* Class  */
+.firstpara{
+    background-color: blue;
+}
+.firsclass{
+    background-color: green;
+}
+.bg-color{
+    color: red;
+}
