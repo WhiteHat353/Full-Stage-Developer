@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal and External CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #Internal{
+            color: brown;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Three Way to Add CSS in HTML</h1>
+    <ol>
+        <li>Inline CSS</li>
+        <li>Internal CSS</li>
+        <li>External CSS</li>
+    </ol>
+    <main>
+        <section>
+            <!--In Inline css we use style attribute in any Tag.-->
+            <h2 style="color: red;background-color: yellow;">1.Inline CSS</h2>
+            <p>Inline CSS is the technique to define the single element with the insert style sheets in an HTML document</p>
+        </section>
+        <section>
+            <!-- In External CSS we use style Tag in head section of the HTML page and give its properties and its values -->
+            <h2 id="Internal">2.Internal CSS</h2>
+            <p>An internal CSS is used to define a style for a single HTML page. An internal CSS is defined in the <head> section of an HTML page, within a &lt;style&gt; element.</p>
+        </section>
+        <section>
+            <!-- An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage -->
+            <h2 id="External">3.External CSS</h2>
+            <p>An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage</p>
+        </section>
+     </main>
+</body>
+</html>
