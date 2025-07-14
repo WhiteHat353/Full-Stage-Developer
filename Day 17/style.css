@@ -1,0 +1,34 @@
+/* *{
+    
+} */
+div{
+    background-color: red;
+}
+.red{
+    background-color: aqua;
+}
+#unique{
+    background-color: brown;
+}
+span > div{
+     background-color: gold;
+}
+section article i {
+    background-color: yellow;
+}
+#Pseudo{
+    background-color: maroon;
+}
+a:visited{
+    color: green;
+    background-color: orange;
+}
+a:link{
+    background-color: darkgreen;
+}
+button:hover{
+    background-color: aqua;
+}
+p:first-child{
+    color: brown;
+}
