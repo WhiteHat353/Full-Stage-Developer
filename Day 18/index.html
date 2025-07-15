@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: brown;
+        }
+
+        .box1 {
+            color: yellow;
+            padding: 10px;
+            margin: 35px;
+            height: 200px;
+            border: 2px solid black;
+            box-sizing: border-box;
+            /* in box-sizing : height  = Content height + padding + border --> height = 200 */
+            /* x-sizing : weight  = Content weight + padding + border --> weight = 200*/
+        } 
+
+        .box2 {
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            height: 200px;
+            border: 2px solid blue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>CSS Box Model</h1>
+        <section>
+            <div class="box box1">I am First Div.</div>
+            <div class="box box2">I am another Div</div>
+        </section>
+        <section>
+            <h2>Calculate Full Height and Weight</h2>
+            <h4>Formula</h4>
+            <p>
+            Total Width = Width + Left Padding + Right Padding + Left Borde + Right Border + Left Margin + Right Margin
+
+            Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin </p>
+        </section>
+    </main>
+</body>
+
+</html>
