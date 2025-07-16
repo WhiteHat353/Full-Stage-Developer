@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts, Texts & Colors Properties</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        h1 {
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-style: italic;
+            font-size: 45px;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+        h3{
+            text-transform: lowercase;
+            text-indent: 45px;
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            word-break: break-all;
+            /* line-height: 4px; */
+            /* letter-spacing: 2px; */
+        }
+        .lorem{
+            border: 2px solid black;
+            word-break: break-all;
+            text-align: center;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            /* width: 45px; */
+        }
+        #h1{
+            /* color: red; */
+            /* color: #C05646 */
+            /* color: rgb(56, 155, 45); */
+            /* color: rgba(56, 155, 45 0.175); */
+            color: hsl(130%, 73%, 80%);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Fonts</h1>
+            <h3>about Fonts</h3>
+            <p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quas repellat quia, architecto necessitatibus nisi, dolorem at blanditiis nesciunt doloremque, laborum explicabo exercitationem modi illo sed unde incidunt deserunt dolor.</p>
+            <p>This is a paragraph.</p>
+        </section>
+        <section>
+            <h1 id="h1">Colors</h1>
+            <h3>Color Type</h3>
+            <ol>
+                <li>
+                    KeyWord Color
+                </li>
+                <li>
+                    RGB Color
+                </li>
+                <li>
+                    RGBA Color
+                </li>
+                <li>
+                    HSL Color
+                </li>
+            </ol>
+        </section>
+    </main>
+</body>
+
+</html>
