@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        /* the specificity of Element is 1 */
+        div h1 {
+            background-color: brown;
+        }
+        /* the specificity of Element is 1 */
+        h1 {
+            background-color: chocolate;
+        }
+        /* the specificity of Class is 10 */
+        .purple {
+            background-color: purple;
+        }
+        /* the specificity of Element is 1 */
+        section h1 {
+            background-color: aqua;
+        }
+        /* the specificity of attributes is 10 */
+        /* Attributes Selector */
+        [date-x="a"]{
+            background-color: blue;
+        }
+        /* the specificity of ID is 10 */
+        #position{
+            border: 2px solid red;
+            border-radius: 5px;
+            background-color: aqua;
+            font-weight: 500;
+        }
+        /* the specificity of ID is 10 */
+        #Formual{
+            background-color: blue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div>
+                <h1 class="purple">
+                    Specificity
+                </h1>
+            </div>
+        </section>
+        <section>
+            <h1>The Cascade Algorithm</h1>
+            <pre>
+                CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason that the text of the button styled with the above CSS will be purple.
+                Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm has 4 distinct stages.
+            </pre>
+            <ol>
+                <li><b>Position and order of appearance</b>: the order in which your CSS rules appear.</li>
+                <li><b>Specificity</b>: an algorithm that determines which CSS selector has the strongest match.</li>
+                <li><b>Origin</b>: the order in which CSS appears and where it comes from, whether that is a browser
+                    style, CSS from a browser extension, or your authored CSS.</li>
+                <li>
+                    <b>Importance</b>: some CSS rules are weighted more heavily than others, especially with the
+                    !important rule type
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Effect of Position</h2>
+            <p id="position">
+                If there are two rules that have selectors of identical specificity, the last one to be declared wins. In an HTML page, you can add styles in different ways: through a &lt;link&gt;tag, a &lt;style&gt; tag, or directly in the element style attribute. If you have one &lt;link&gt;tag at the top of your page and another at the bottom, the styles from the bottom one will be used. The same goes for &lt;styl&gt;tags; the ones lower down on the page take priority. An inline style attribute with CSS declared in it will override all other CSS, regardless of its position, unless a declaration has !important defined. If the browser doesn't support a property, it is ignored!
+            </p>
+        </section>
+        <section>
+            <h2>Specificity</h2>
+            <p>
+                CSS specificity determines which style rules get applied to an element when there are conflicts. Higher specificity means the style will be used. It's calculated based on a point system involving inline styles, IDs, classes, and tag names.
+            </p>
+        </section>
+        <section id="Formual">
+            <h3>Formual to calculate Specificity:</h3>
+            <p>
+                <b>
+                    Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+                </b>
+            </p>
+            <h4>Specificity Calculation</h4>
+            <p>
+                To calculate specificity, assign a value to each part of the selector:
+            </p>
+            <ol>
+                <li>
+                    <b>Universal Selector: 0</b>
+                </li>
+                <li><b>Element selectors and pseudo-elements: 1</b></li>
+                <li><b>Class selectors, attribute selectors, and pseudo-classes: 10</b></li>
+                <li>
+                    <b>ID selectors: 100</b>
+                </li>
+                <li><b>Inline styles: 1000</b></li>
+            </ol>
+        </section>
+        <h5>Attributes Selectors</h5>
+        <p date-x="a">This is a Paragraph.</p>
+    </main>
+</body>
+
+</html>
