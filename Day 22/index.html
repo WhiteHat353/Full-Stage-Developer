@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            border: 2px solid aquamarine;
+            /* width: 1366px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid aquamarine;
+            /* width: 1366px; */
+            width: 80vw;
+            height: 80vh;
+            margin: auto;
+            min-height: 80vh;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 18px;
+            background-color: blue;
+        }
+        .container > div{
+            /* font-size: 2em; */
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid red;
+        }
+        .container > div > div{
+            /* font-size: 2em; */
+            /* font-size: 2rem; */
+            width: 50%;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units -->
+        <section>
+            <h1>
+                <div class="box">I am box.</div>
+            </h1>
+        </section>
+        <section>
+            <h1>
+                <div class="container">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, maiores aperiam officia quia, aut voluptate, dicta rerum natus rem quibusdam deleniti! Dignissimos laudantium eaque quibusdam exercitationem laborum ratione voluptatum sequi.
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rerum tenetur harum consequatur pariatur sint ut porro, repellendus corrupti, veniam soluta iure perferendis natus quia reprehenderit modi culpa architecto vel!
+                    </div>
+                </div>
+                </div>
+            </h1>
+        </section>
+    </main>
+</body>
+</html>
