@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+            display: inline-block;
+            margin: 45px;
+            width: 34px;
+            border: 2px solid black;
+        }
+        .box1{
+            display: inline;
+            margin: 45px;
+            width: 34px;
+            /* display: none; */
+            visibility: hidden;
+        }
+        .Another{
+            display: block;
+            background-color: brown;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+        <section>
+            <div class="box">This is a box.</div>
+            <div class="box box1">This is a box.</div>
+        </section>
+        <section>
+            <span class="Another">
+                This is a Another box.
+            </span>
+        </section>
+    </main>
+</body>
+</html>
