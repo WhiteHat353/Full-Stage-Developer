@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child {
+            background-color: aqua;
+        }
+
+        .box:first-child::first-letter {
+            font-weight: bolder;
+        }
+
+        .boxes * {
+            border: 3px solid gray;
+        }
+
+        .box:nth-child(even) {
+            background-color: red;
+        }
+
+        .box:nth-last-child(odd) {
+            background-color: brown;
+        }
+
+        /* Dymanic content repersentation */
+        .boxes:before {
+            content: "Abdul jabbar";
+        }
+
+        .boxes::after {
+            content: "Sigma Web Development Courses is good.";
+            color: blue;
+            padding: 45px;
+        }
+
+        ::selection {
+            color: yellow
+        }
+
+        input::placeholder {
+            color: cyan;
+            font: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="boxes">
+                <div class="box">Hey I am box.</div>
+                <div class="box">Hey i am box.</div>
+                <div class="box">Hey i am box.</div>
+            </div>
+        </section>
+        <section>
+            <input type="" placeholder="Type your Name">
+        </section>
+    </main>
+</body>
+
+</html>
