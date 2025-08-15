@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - object fit and position</title>
+    <style>
+        .container{
+            height: 180px;
+            /* background-color: red; */
+            background-image: url("Image1.jpg");
+            background-position: 12px 20px;
+            width: 350px;
+            border: 5px solid black;
+            border-radius: 5px;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+        }
+        .container img{
+            height: 177px;
+            width: 200px;
+            object-fit: cover;
+            object-position: 12px 23px;
+            /* object-position: left bottom; */
+            /* object-fit: fill; */
+            /* object-fit: contain; */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <!-- <img src="/Day 49/Image1.jpg" alt="Web Development"> -->
+        </div>
+    </main>
+</body>
+</html>
