@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8- Solution</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .ball {
+            height: 121px;
+            width: 121px;
+            position: absolute;
+            background-color: red;
+            border-radius: 70px;
+            bottom: 0px;
+            left: 0px;
+            animation: AnimationX 3s linear infinite, AnimationY 1s ease-out infinite alternate-reverse;
+        }
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 90vw;
+            background-color: blue;
+        }
+        h1{
+            text-align: center;
+        }
+
+        @keyframes AnimationX {
+            from{
+                left: 0;
+            }
+
+            to{
+                left: 100%;
+            }
+        }
+
+        @keyframes AnimationY {
+            from{
+                bottom: 0;
+            }
+
+            to{
+                bottom: 75%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>
+            Bouncing a Ball
+        </h1>
+    </main>
+    <div class="container">
+        <div class="ball">
+            
+        </div>
+    </div>
+</body>
+
+</html>
