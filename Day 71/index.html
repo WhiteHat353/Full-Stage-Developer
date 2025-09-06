@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and Removing Elements using JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Hey i am Box 1.</div>
+        <div class="box">Hey i am Box 2.</div>
+    </div>
+    <script>
+        // document.querySelector(".box");
+        // document.querySelector(".box").innerHTML;
+        // document.querySelector(".box").innerText;
+        // document.querySelector(".container").outerHTML;
+        // document.querySelector(".container").tagName;
+        // document.designMode = "on";
+
+        // insertion
+        let div = document.createElement("div");
+        div.innerHTML = "I am inserted by <b> Abdul Jabbar <b>.";
+        div.setAttribute("class", "created");
+        document.querySelector(".container").append(div);
+        
+        // insertion
+        let cons = document.querySelector(".container");
+        cons.insertAdjacentHTML("afterend", "<b>This is writing by Abdul Jabbar</b>");
+
+    </script>
+</body>
+
+</html>
